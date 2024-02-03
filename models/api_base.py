@@ -5,13 +5,11 @@
 @time: 2022/08/18
 @desc: 这只飞很懒
 """
-import os
 import random
 import time
 from math import ceil
 from typing import List
 
-import openai
 from tqdm import tqdm
 import openai._exceptions as openai_error
 from openai import OpenAI
@@ -23,7 +21,6 @@ INIT_DELAY = 1
 EXPONENTIAL_BASE = 1.3
 MAX_RETRIES = 8 
 
-import signal
 
 
 

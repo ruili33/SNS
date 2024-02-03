@@ -240,7 +240,7 @@ def get_k_hop_neighbors(g, node_idx, k):
             visited[idx]=i.item()
     return visited
 
-def get_top_k_3hop_neighbor_with_label_simcse(graph,text, sampled_test_node_idxs,k,train_mask,val_mask):
+def get_top_k_neighbor_with_label_simcse(graph,text, sampled_test_node_idxs,k,train_mask,val_mask):
     out=[]
     simcsemoddel=simcse()
     for i in tqdm(sampled_test_node_idxs):

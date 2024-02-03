@@ -12,7 +12,7 @@ import torch_geometric.transforms as T
 def get_raw_text_citeseer(SEED):
     dataset_name="citeseer"
     split= "fixed"
-    dataset = torch.load(f"./preprocessed_data/new/{dataset_name}_{split}_sbert.pt", map_location = 'cpu')
+    dataset = torch.load(f"./dataset/citeseer/{dataset_name}_{split}_sbert.pt", map_location = 'cpu')
     text={}
     text['text']=dataset.raw_texts
     text['label']=dataset.category_names

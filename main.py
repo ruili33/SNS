@@ -1,7 +1,6 @@
 import logging
 import time
 import arg
-from models.api_base import APIBase
 from call_api import call_api
 import utils
 import os

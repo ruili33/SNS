@@ -193,7 +193,7 @@ class ComprehensiveStudy:
             graph=self.get_graph(dataset)
             combine_text=utils.get_combine_text(text,dataset_name)
 
-            neighbor_list=utils.get_top_k_3hop_neighbor_with_label_simcse(graph,combine_text,sampled_test_node_idxs,k=100,train_mask=dataset.train_mask,val_mask=dataset.val_mask)
+            neighbor_list=utils.get_top_k_neighbor_with_label_simcse(graph,combine_text,sampled_test_node_idxs,k=100,train_mask=dataset.train_mask,val_mask=dataset.val_mask)
             utils.save_neighbor(neighbor_list,dataset_name,seed)
 
             neighbor_list=utils.load_neighbor(f"./neighbor_dict/{dataset_name}_neighbor_{seed}.json")

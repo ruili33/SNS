@@ -1,4 +1,3 @@
-import os.path
 import sys
 sys.path.append(".")
 from models.api_base import APIBase

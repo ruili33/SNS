@@ -26,6 +26,9 @@ For `cora`, `pubmed`, `ogbn-arxiv` and `ogbn-product`, please following the data
 
 For `citeseer`, please download via this [link](https://drive.google.com/file/d/16RanD_SHiKtdKP_u1G8ilblUhA9Zkn9J/view?usp=share_link) and place it under /dataset/citeseer. This preprocessed data is borrowed from [Graph-LLM](https://github.com/CurryTang/Graph-LLM).
 
+### API Settings
+The api-related arguments are specified in `call_api.py`, including the api key. Please set up your OpenAI API in `call_api.py`.
+
 ### Usage
 
 ```sh

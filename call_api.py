@@ -13,8 +13,8 @@ def call_api(prompt,temperature=0,engine="gpt-3.5-turbo-1106",max_tokens=1000):
             frequency_penalty=0,
             presence_penalty=0,
             best_of=1,
-            api_key="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" ,
-            organization_key="org-BRY8JpM4YwZisiyvCfwlNXcA"
+            api_key="your api" ,
+            # organization_key="your key"
         )
     result=client.get_multiple_sample(prompt)
     return result

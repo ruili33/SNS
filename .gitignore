@@ -1,0 +1,7 @@
+preprocessed_data/
+dataset/
+openai_in/
+dict/
+saved_pred/
+neighbor_dict/
+result/

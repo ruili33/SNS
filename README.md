@@ -1,5 +1,7 @@
 # SNS
-Code for paper "Similarity-based Neighbor Selection for Graph LLMs"
+Code for paper ["Similarity-based Neighbor Selection for Graph LLMs"](https://arxiv.org/pdf/2402.03720.pdf)
+
+
 
 ### Environment Setup
 #### Assume your cuda version is 11.8
@@ -53,4 +55,17 @@ Run SNS for the ogbn-arxiv dataset in text only mode and k=8 setting:
 
 ```sh
 python main.py --dataset arxiv --mode t --k 8 
+```
+
+### Citation
+
+If you find the above code is helpful for your research, please cite our paper.
+
+```
+@article{li2024similarity,
+  title={Similarity-based Neighbor Selection for Graph LLMs},
+  author={Li, Rui and Li, Jiwei and Han, Jiawei and Wang, Guoyin},
+  journal={arXiv preprint arXiv:2402.03720},
+  year={2024}
+}
 ```

@@ -219,7 +219,7 @@ def get_k_hop_neighbors(g, node_idx, k):
     - list: List of k-hop neighbor node indices.
     """
     visited = set([node_idx])
-    current_level = set([node_idx])
+    current_level = set([node_idx])a
     for _ in range(k):
         next_level = set()
         for u in current_level:
